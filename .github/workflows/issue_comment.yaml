@@ -10,5 +10,5 @@ jobs:
 
     steps:
       - name: "dump github context"
-        run: echo "${{ toJson(github.event) }}" | jq
+        run: echo '${{ toJSON(github.event) }}' | jq
         shell: bash
