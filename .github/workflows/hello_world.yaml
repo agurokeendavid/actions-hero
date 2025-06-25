@@ -14,12 +14,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - uses: actions/checkout@v2
+        # This step checks out the repository so that the workflow can access its contents
       - name: Checkout repository
         run: echo "Checking out the repository..."
         shell: bash
-        # Using actions/checkout to ensure the repository is checked out
-        uses: actions/checkout@v2
-  
   goodbye:
     runs-on: ubuntu-latest
 
